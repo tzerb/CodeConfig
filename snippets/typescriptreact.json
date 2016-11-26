@@ -1,16 +1,50 @@
 {
-/*
 	 // Place your snippets for TypeScript React here. Each snippet is defined under a snippet name and has a prefix, body and 
 	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
 	 // Example:
 	 "Print to console": {
-		"prefix": "log",
+		"prefix": "cls1",
 		"body": [
+			"import React, {PropTypes} from 'react';",
+			"import {connect} from 'react-redux';",
+			"import {bindActionCreators} from 'redux';",
+			"",			
+			"export interface $1Props",
+			"{",
+			"}",
+			"",			
+			"export interface $1State",
+			"{",
+			"}",
+			"",			
+			"export class $1 extends React.Component<$1Props, $1State>  {",
+			"    constructor(props:$1Props, context : any)    {",
+			"        super(props, context);",
+			"",
+			"    }",
+			"   ",
+			"    render() {",
+			"		<div>$1</div>",
+			"	}",
+			"}"
+		]
+	}
+
+}
+
+/*
+export interface ManagePicturePageState
+{
+    picture?: any;
+    errors?: any;
+    saving?: any;
+}
+
+export class ManagePicturePage extends React.Component<ManagePicturePageProps, ManagePicturePageState>  {			
 			"console.log('$1');",
 			"$2"
 		],
-		"description": "Log output to console"
+		"description": "Create"
 	}
 */
-}
