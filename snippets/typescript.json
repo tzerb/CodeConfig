@@ -1,16 +1,13 @@
 {
-/*
-	 // Place your snippets for TypeScript here. Each snippet is defined under a snippet name and has a prefix, body and 
-	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
-	 // Example:
-	 "Print to console": {
-		"prefix": "log",
+	 "prop1": {
+		"prefix": "prop1",
 		"body": [
-			"console.log('$1');",
-			"$2"
+			"private _$1:$2;",
+			"get $1() : $2",
+			"{",
+			"	return this._$1;",
+			"}"
 		],
-		"description": "Log output to console"
+		"description": "basic typescript property"
 	}
-*/
 }
